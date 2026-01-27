@@ -30,5 +30,8 @@ ENV DB_USERNAME=
 ENV DB_PASSWORD=
 ENV OPENAI_API_KEY=
 
+# Use Render’s PORT variable for Spring Boot
+ENV SERVER_PORT=${PORT}
+
 # Run Spring Boot
 ENTRYPOINT ["java", "-jar", "app.jar"]

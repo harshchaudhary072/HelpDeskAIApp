@@ -29,7 +29,7 @@ spring:
           jdbc:
             initialize-schema: always
 server:
-  port: 8081
+  port: ${SERVER_PORT:8081}
 logging:
   level:
     org.springframework.ai.chat.client.advisor: DEBUG
