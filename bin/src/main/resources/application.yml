@@ -1,12 +1,11 @@
-
 spring:
   application:
-    name: help-desk-backend
+    name: "help-desk-backend"
 
   datasource:
-    url: jdbc:mysql://${DB_HOST}:${DB_PORT}/${DB_NAME}?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:mysql://localhost:3306/helpdeskdb
+    username: root
+    password: "0000"
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -29,7 +28,7 @@ spring:
           jdbc:
             initialize-schema: always
 server:
-  port: ${SERVER_PORT:8081}
+  port: 8081
 logging:
   level:
     org.springframework.ai.chat.client.advisor: DEBUG
