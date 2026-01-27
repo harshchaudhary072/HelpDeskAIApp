@@ -17,7 +17,7 @@ FROM eclipse-temurin:21-jre-jammy
 WORKDIR /app
 
 # Copy the jar from build stage
-COPY --from=build /app/target/*-spring-boot.jar app.jar
+COPY --from=build /app/target/help-desk-backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port
 EXPOSE 8081
