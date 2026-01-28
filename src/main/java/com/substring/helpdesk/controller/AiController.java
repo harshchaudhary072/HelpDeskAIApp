@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/api/v1/helpdesk")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("https://helpdeskaiapp-frontend.onrender.com")
 public class AiController {
 	private final AIService service;
 	
